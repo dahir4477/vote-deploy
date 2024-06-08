@@ -14,7 +14,7 @@ spec:
         app: okteto/sample-app
     spec:
       containers:
-      - image: docker.io/dahir4477/okteto/sample-app:v1
-        name: vote-ui
+      - image: docker.io/dahir4477/okteto/sample-app
+        name: okteto/sample-app
         ports:
         - containerPort: 80
