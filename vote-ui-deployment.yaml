@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okteto/sample-app
+  name: okteto/vote
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: okteto/sample-app
+      app: okteto/vote
   template:
     metadata:
       labels:
-        app: okteto/sample-app
+        app: okteto/vote
     spec:
       containers:
-      - image: docker.io/dahir4477/okteto/sample-app
-        name: okteto/sample-app
+      - image: docker.io/dahir4477/okteto/vote
+        name: okteto/vote
         ports:
         - containerPort: 80
