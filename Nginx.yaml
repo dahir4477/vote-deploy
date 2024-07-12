@@ -7,6 +7,10 @@ spec:
   selector:
     matchLabels:
       system: ReplicaOne
+       template:
+    metadata:
+      labels:
+        system: ReplicaOne
      spec:
       containers:
       - name: nginx
