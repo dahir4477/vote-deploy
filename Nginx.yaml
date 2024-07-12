@@ -7,11 +7,7 @@ spec:
   selector:
     matchLabels:
       system: ReplicaOne
-  template:
-    metadata:
-      labels:
-        system: ReplicaOne
-    spec:
+     spec:
       containers:
       - name: nginx
         image: nginx:1.15.1
